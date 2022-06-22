@@ -1,4 +1,4 @@
-package Tuto;
+package main;
 
 import jade.core.Profile;
 import jade.core.ProfileImpl;
@@ -25,11 +25,11 @@ public class Main {
 		Object[] argsAgent5 = { 20, 60 };
 
 		try {
-			agentController1 = containerController.createNewAgent("Agent1", "Tuto.NodeAgent", argsAgent1);
-			agentController2 = containerController.createNewAgent("Agent2", "Tuto.NodeAgent", argsAgent2);
-			agentController3 = containerController.createNewAgent("Agent3", "Tuto.NodeAgent", argsAgent3);
-			agentController4 = containerController.createNewAgent("Agent4", "Tuto.NodeAgent", argsAgent4);
-			agentController5 = containerController.createNewAgent("Agent5", "Tuto.NodeAgent", argsAgent5);
+			agentController1 = containerController.createNewAgent("Agent1", "main.NodeAgent", argsAgent1);
+			agentController2 = containerController.createNewAgent("Agent2", "main.NodeAgent", argsAgent2);
+			agentController3 = containerController.createNewAgent("Agent3", "main.NodeAgent", argsAgent3);
+			agentController4 = containerController.createNewAgent("Agent4", "main.NodeAgent", argsAgent4);
+			agentController5 = containerController.createNewAgent("Agent5", "main.NodeAgent", argsAgent5);
 
 			agentController1.start();
 			agentController2.start();
